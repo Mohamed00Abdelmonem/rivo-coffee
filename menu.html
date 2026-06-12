@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIVO | The Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Inter:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+    
+  <!-- Navigation -->
+  <header class="fixed top-0 w-full z-[100] transition-all duration-500 py-6 px-margin-desktop bg-black/90 backdrop-blur-md border-b border-white/10" id="navbar">
+    <nav class="flex justify-between items-center max-w-container-max mx-auto">
+      <div class="flex items-center gap-4">
+        <img src="/coffee.png" alt="Rivo Logo" class="w-10 h-10 object-contain invert brightness-0" />
+        <span class="font-headline-lg text-[24px] font-extrabold text-white tracking-tight">RIVO</span>
+      </div>
+      <div class="hidden md:flex items-center gap-10 text-white font-label-sm uppercase tracking-widest text-sm">
+        <a href="/" class="hover:opacity-70 transition-opacity">Home</a>
+        <a href="/menu.html" class="opacity-50 pointer-events-none">Menu</a>
+        <a href="/about.html" class="hover:opacity-70 transition-opacity">Story</a>
+        <a href="/gallery.html" class="hover:opacity-70 transition-opacity">Gallery</a>
+        <a href="/contact.html" class="hover:opacity-70 transition-opacity">Contact</a>
+      </div>
+      <button class="bg-white text-black px-8 py-3 rounded-full font-label-sm uppercase tracking-widest font-bold hover:scale-105 transition-transform duration-300">
+        Order
+      </button>
+    </nav>
+  </header>
+
+    <main class="pt-32">
+        <!-- Hero Introduction -->
+        <section class="max-w-container-max mx-auto px-margin-desktop py-12 text-center relative overflow-hidden">
+            <div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
+            <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
+            
+            <h1 class="font-headline-xl text-5xl md:text-6xl text-on-surface mb-6 animate-staggered">
+                Scientific Precision. <br/><span class="text-primary">Sensory Excellence.</span>
+            </h1>
+            <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 animate-staggered" style="animation-delay: 0.2s;">
+                Explore our curated selection of ultra-premium roasts and artisanal concoctions, where every bean is a result of laboratory-grade roasting and passionate craft.
+            </p>
+
+            <!-- Search & Filter Area -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 animate-staggered" style="animation-delay: 0.3s;">
+                <div class="relative w-full max-w-md">
+                    <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+                    <input type="text" placeholder="Search the Reserve..." class="w-full pl-12 pr-6 py-4 rounded-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary/20 text-body-md transition-all shadow-inner" />
+                </div>
+                <div class="flex flex-wrap justify-center gap-2 overflow-x-auto pb-2">
+                    <button class="category-pill active px-6 py-3 rounded-full font-label-sm transition-all duration-300 active:scale-95">All</button>
+                    <button class="category-pill px-6 py-3 rounded-full font-label-sm transition-all duration-300 active:scale-95">Espresso</button>
+                    <button class="category-pill px-6 py-3 rounded-full font-label-sm transition-all duration-300 active:scale-95">Latte</button>
+                    <button class="category-pill px-6 py-3 rounded-full font-label-sm transition-all duration-300 active:scale-95">Cold Brew</button>
+                    <button class="category-pill px-6 py-3 rounded-full font-label-sm transition-all duration-300 active:scale-95">Signature</button>
+                </div>
+            </div>
+            
+            <div class="flex gap-4 justify-center mt-6 animate-staggered" style="animation-delay: 0.4s;">
+                <span class="font-label-sm uppercase tracking-widest text-xs text-on-surface-variant">Popular Tags:</span>
+                <span class="font-label-sm text-xs text-primary hover:underline cursor-pointer">#SingleOrigin</span>
+                <span class="font-label-sm text-xs text-primary hover:underline cursor-pointer">#Geisha</span>
+                <span class="font-label-sm text-xs text-primary hover:underline cursor-pointer">#Decaf</span>
+            </div>
+        </section>
+
+        <!-- Drink of the Day Spotlight -->
+        <section class="max-w-container-max mx-auto px-margin-desktop py-12 mb-12">
+            <div class="relative w-full aspect-[21/9] rounded-3xl overflow-hidden bg-primary group animate-staggered" style="animation-delay: 0.5s;">
+                <div class="absolute inset-0 z-0 transition-transform duration-700 group-hover:scale-105">
+                    <video class="w-full h-full object-cover opacity-80" autoplay muted loop playsinline>
+                        <source src="/hero.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent opacity-80"></div>
+                </div>
+                
+                <div class="relative z-10 flex flex-col justify-center h-full p-12 text-on-primary max-w-xl">
+                    <div class="glass-effect bg-white/20 px-4 py-1 rounded-full w-fit mb-4 flex items-center gap-2 border border-white/30">
+                        <span class="material-symbols-outlined text-accent-yellow fill text-sm">auto_awesome</span>
+                        <span class="font-label-sm uppercase tracking-widest font-bold text-white">Seasonal Special</span>
+                    </div>
+                    <h2 class="font-headline-xl text-5xl mb-4 text-white">The Triple Reserve Flight</h2>
+                    <p class="font-body-lg mb-8 text-white/80">
+                        Experience our spectrum of intensity. From botanical notes of matcha to deep volcanic earthiness.
+                    </p>
+                    <div class="flex items-center gap-6">
+                        <button class="bg-white text-black px-8 py-3 rounded-full font-label-sm uppercase tracking-widest font-bold hover:scale-105 transition-all">Order $12.50</button>
+                        <div class="text-white/60 font-label-sm uppercase tracking-widest">Limited until 2PM</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Grid -->
+        <section class="max-w-container-max mx-auto px-margin-desktop py-24 bg-surface-container-lowest rounded-[48px] mb-24">
+            <div class="flex items-end justify-between mb-16">
+                <div>
+                    <h2 class="font-headline-xl text-4xl text-on-surface mb-2">The Permanent Collection</h2>
+                    <p class="font-body-lg text-on-surface-variant">Precision roasted, meticulously extracted.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12" id="product-grid">
+                <!-- Card 1 -->
+                <div class="group animate-staggered" style="animation-delay: 0.1s;">
+                    <div class="relative aspect-square rounded-3xl overflow-hidden bg-surface-container mb-6 cursor-pointer">
+                        <div class="absolute top-4 left-4 z-10 glass-effect bg-white/90 px-3 py-1 rounded-full">
+                            <span class="font-label-sm font-bold text-primary tracking-widest uppercase">Best Seller</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Latte" />
+                        <button class="absolute bottom-6 right-6 w-14 h-14 bg-black text-white rounded-full flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl hover:bg-primary">
+                            <span class="material-symbols-outlined">add</span>
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-headline-lg text-2xl text-on-surface">Velvet Espresso</h3>
+                        <span class="font-headline-lg text-2xl text-primary font-bold">$4.50</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="flex text-accent-yellow">
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                        </div>
+                        <span class="font-label-sm text-on-surface-variant">(124)</span>
+                    </div>
+                    <p class="font-body-md text-on-surface-variant leading-relaxed">Dual-origin blend with notes of dark cocoa and toasted hazelnut.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group animate-staggered" style="animation-delay: 0.2s;">
+                    <div class="relative aspect-square rounded-3xl overflow-hidden bg-surface-container mb-6 cursor-pointer">
+                        <div class="absolute top-4 left-4 z-10 glass-effect bg-black/90 px-3 py-1 rounded-full">
+                            <span class="font-label-sm font-bold text-white tracking-widest uppercase">Limited</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1461023058943-07cb1ceac002?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cold Brew" />
+                        <button class="absolute bottom-6 right-6 w-14 h-14 bg-black text-white rounded-full flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl hover:bg-primary">
+                            <span class="material-symbols-outlined">add</span>
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-headline-lg text-2xl text-on-surface">Nitrogen Reserve</h3>
+                        <span class="font-headline-lg text-2xl text-primary font-bold">$6.75</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="flex text-accent-yellow">
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                            <span class="material-symbols-outlined text-sm">star</span>
+                        </div>
+                        <span class="font-label-sm text-on-surface-variant">(89)</span>
+                    </div>
+                    <p class="font-body-md text-on-surface-variant leading-relaxed">24-hour cold macerated beans infused with high-pressure nitrogen.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group animate-staggered" style="animation-delay: 0.3s;">
+                    <div class="relative aspect-square rounded-3xl overflow-hidden bg-surface-container mb-6 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Matcha" />
+                        <button class="absolute bottom-6 right-6 w-14 h-14 bg-black text-white rounded-full flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl hover:bg-primary">
+                            <span class="material-symbols-outlined">add</span>
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-headline-lg text-2xl text-on-surface">Ceremonial Matcha</h3>
+                        <span class="font-headline-lg text-2xl text-primary font-bold">$5.90</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="flex text-accent-yellow">
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                            <span class="material-symbols-outlined fill text-sm">star</span>
+                        </div>
+                        <span class="font-label-sm text-on-surface-variant">(201)</span>
+                    </div>
+                    <p class="font-body-md text-on-surface-variant leading-relaxed">Stone-ground ceremonial grade matcha prepared with precision-steamed oat milk.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <footer class="bg-black text-white py-20 px-margin-desktop">
+    <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/20 pb-16">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-4 mb-6">
+          <img src="/coffee.png" alt="Rivo Logo" class="w-10 h-10 object-contain invert brightness-0" />
+          <span class="font-headline-lg text-[24px] font-extrabold tracking-tight">RIVO</span>
+        </div>
+        <p class="text-white/60 font-body-lg max-w-md">Scientific Elegance. We redefine the coffee experience through rigorous precision and luxury design.</p>
+      </div>
+      <div>
+        <h4 class="font-label-sm uppercase tracking-widest mb-6">Experience</h4>
+        <ul class="space-y-4 text-white/60">
+          <li><a href="/menu.html" class="hover:text-white transition-colors">The Menu</a></li>
+          <li><a href="/about.html" class="hover:text-white transition-colors">Our Story</a></li>
+          <li><a href="/gallery.html" class="hover:text-white transition-colors">Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-label-sm uppercase tracking-widest mb-6">Connect</h4>
+        <ul class="space-y-4 text-white/60">
+          <li><a href="/contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-container-max mx-auto pt-8 flex flex-col md:flex-row justify-between text-white/40 font-label-sm uppercase tracking-widest text-[10px]">
+      <p>&copy; 2026 RIVO RESERVE. ALL RIGHTS RESERVED.</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-white">PRIVACY</a>
+        <a href="#" class="hover:text-white">TERMS</a>
+      </div>
+    </div>
+  </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+        // Category filtering interaction
+        document.querySelectorAll('.category-pill').forEach(pill => {
+            pill.addEventListener('click', function() {
+                document.querySelector('.category-pill.active').classList.remove('active');
+                this.classList.add('active');
+                
+                const grid = document.getElementById('product-grid');
+                grid.style.opacity = '0';
+                grid.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    grid.style.transition = 'all 0.5s cubic-bezier(0.23, 1, 0.32, 1)';
+                    grid.style.opacity = '1';
+                    grid.style.transform = 'translateY(0)';
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>

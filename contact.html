@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RIVO | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Inter:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-background overflow-x-hidden font-body-md">
+  
+  <header class="fixed top-0 w-full z-[100] transition-all duration-500 py-6 px-margin-desktop bg-black/90 backdrop-blur-md border-b border-white/10" id="navbar">
+    <nav class="flex justify-between items-center max-w-container-max mx-auto">
+      <div class="flex items-center gap-4">
+        <img src="/coffee.png" alt="Rivo Logo" class="w-10 h-10 object-contain invert brightness-0" />
+        <span class="font-headline-lg text-[24px] font-extrabold text-white tracking-tight">RIVO</span>
+      </div>
+      <div class="hidden md:flex items-center gap-10 text-white font-label-sm uppercase tracking-widest text-sm">
+        <a href="/" class="hover:opacity-70 transition-opacity">Home</a>
+        <a href="/menu.html" class="hover:opacity-70 transition-opacity">Menu</a>
+        <a href="/about.html" class="hover:opacity-70 transition-opacity">Story</a>
+        <a href="/gallery.html" class="hover:opacity-70 transition-opacity">Gallery</a>
+        <a href="/contact.html" class="opacity-50 pointer-events-none">Contact</a>
+      </div>
+      <button class="bg-white text-black px-8 py-3 rounded-full font-label-sm uppercase tracking-widest font-bold hover:scale-105 transition-transform duration-300">
+        Order
+      </button>
+    </nav>
+  </header>
+
+  <main class="pt-40 pb-32">
+    <section class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-20">
+      <div>
+        <h1 class="font-headline-xl text-5xl md:text-7xl mb-8">Connect <br/>with the Lab.</h1>
+        <p class="font-body-lg text-on-surface-variant mb-12">
+          For wholesale inquiries, press, or to schedule a private tasting at our flagship reserve.
+        </p>
+        
+        <div class="space-y-8">
+          <div>
+            <h4 class="font-label-sm uppercase tracking-widest text-primary mb-2">Location</h4>
+            <p class="font-body-lg">100 Luxury Avenue<br/>New York, NY 10001</p>
+          </div>
+          <div>
+            <h4 class="font-label-sm uppercase tracking-widest text-primary mb-2">Contact</h4>
+            <p class="font-body-lg">reserve@rivocoffee.com<br/>+1 (800) 555-RIVO</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-low p-10 rounded-3xl">
+        <form class="flex flex-col gap-6">
+          <div>
+            <label class="font-label-sm uppercase tracking-widest mb-2 block">Name</label>
+            <input type="text" class="w-full bg-white px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-primary" placeholder="Your Name" />
+          </div>
+          <div>
+            <label class="font-label-sm uppercase tracking-widest mb-2 block">Email</label>
+            <input type="email" class="w-full bg-white px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-primary" placeholder="Your Email" />
+          </div>
+          <div>
+            <label class="font-label-sm uppercase tracking-widest mb-2 block">Inquiry</label>
+            <textarea class="w-full bg-white px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-primary h-32" placeholder="How can we assist you?"></textarea>
+          </div>
+          <button type="submit" class="bg-black text-white py-4 rounded-xl font-label-sm uppercase tracking-widest font-bold hover:bg-primary transition-colors mt-4">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black text-white py-20 px-margin-desktop">
+    <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/20 pb-16">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-4 mb-6">
+          <img src="/coffee.png" alt="Rivo Logo" class="w-10 h-10 object-contain invert brightness-0" />
+          <span class="font-headline-lg text-[24px] font-extrabold tracking-tight">RIVO</span>
+        </div>
+        <p class="text-white/60 font-body-lg max-w-md">Scientific Elegance. We redefine the coffee experience through rigorous precision and luxury design.</p>
+      </div>
+      <div>
+        <h4 class="font-label-sm uppercase tracking-widest mb-6">Experience</h4>
+        <ul class="space-y-4 text-white/60">
+          <li><a href="/menu.html" class="hover:text-white transition-colors">The Menu</a></li>
+          <li><a href="/about.html" class="hover:text-white transition-colors">Our Story</a></li>
+          <li><a href="/gallery.html" class="hover:text-white transition-colors">Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-label-sm uppercase tracking-widest mb-6">Connect</h4>
+        <ul class="space-y-4 text-white/60">
+          <li><a href="/contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-container-max mx-auto pt-8 flex flex-col md:flex-row justify-between text-white/40 font-label-sm uppercase tracking-widest text-[10px]">
+      <p>&copy; 2026 RIVO RESERVE. ALL RIGHTS RESERVED.</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-white">PRIVACY</a>
+        <a href="#" class="hover:text-white">TERMS</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
