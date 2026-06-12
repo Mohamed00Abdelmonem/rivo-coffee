@@ -61,3 +61,6 @@ html.lenis, html.lenis body {
   animation: staggeredFadeIn 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards; 
   opacity: 0; 
 }
+
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RIVO | Community</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Inter:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-background overflow-x-hidden font-body-md">
+  
+  <header class="fixed top-0 w-full z-[100] transition-all duration-500 py-6 px-margin-desktop bg-black/90 backdrop-blur-md border-b border-white/10" id="navbar">
+    <nav class="flex justify-between items-center max-w-container-max mx-auto">
+      <div class="flex items-center gap-3 md:gap-4">
+        <img src="/assets/img/logo.png" alt="Rivo Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain" />
+        <span class="font-headline-lg text-xl md:text-[24px] font-extrabold text-white tracking-tight hidden sm:block">RIVO</span>
+      </div>
+      <div class="hidden md:flex items-center gap-10 text-white font-label-sm uppercase tracking-widest text-sm">
+        <a href="/" class="hover:opacity-70 transition-opacity">Home</a>
+        <a href="/menu.html" class="hover:opacity-70 transition-opacity">Menu</a>
+        <a href="/about.html" class="hover:opacity-70 transition-opacity">Story</a>
+        <a href="/gallery.html" class="hover:opacity-70 transition-opacity">Gallery</a>
+        <a href="/social.html" class="opacity-50 pointer-events-none">Community</a>
+        <a href="/contact.html" class="hover:opacity-70 transition-opacity">Contact</a>
+      </div>
+      <div class="flex items-center gap-3 md:gap-6">
+        <button class="bg-white text-black px-5 py-2 md:px-8 md:py-3 rounded-full font-label-sm uppercase tracking-widest text-xs md:text-sm font-bold hover:scale-105 transition-transform duration-300 whitespace-nowrap hidden md:block">
+          Order
+        </button>
+        <button id="hamburger-btn" class="md:hidden text-white flex items-center justify-center ml-2 hover:text-blue-400 transition-colors">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-28 pb-32 max-w-container-max mx-auto relative min-h-screen">
+    
+    <!-- Header -->
+    <div class="mb-12 mt-8 px-4 md:px-margin-desktop flex flex-col items-center text-center gs-reveal">
+      <h1 class="font-headline-xl text-4xl md:text-5xl font-extrabold mb-4">The RIVO Community</h1>
+      <p class="font-body-lg text-on-surface-variant max-w-xl mx-auto">Explore the finest moments, exclusive reels, and curated lifestyle content from coffee connoisseurs worldwide.</p>
+    </div>
+
+    <!-- 1. Community Highlights (Stories) -->
+    <section class="mb-10 px-4 md:px-margin-desktop gs-reveal">
+      <div class="flex gap-4 overflow-x-auto pb-4 hide-scrollbar">
+        <!-- Story Items -->
+        <div class="flex flex-col items-center gap-1 flex-shrink-0 cursor-pointer story-item">
+          <div class="w-[66px] h-[66px] rounded-full p-[2px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500">
+            <div class="w-full h-full rounded-full border-[2px] border-background overflow-hidden bg-surface-container flex items-center justify-center">
+              <span class="material-symbols-outlined text-3xl text-outline">person</span>
+            </div>
+          </div>
+          <span class="font-label-sm text-[11px] font-normal truncate w-[70px] text-center">user_482</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 flex-shrink-0 cursor-pointer story-item">
+          <div class="w-[66px] h-[66px] rounded-full p-[2px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500">
+            <div class="w-full h-full rounded-full border-[2px] border-background overflow-hidden bg-surface-container flex items-center justify-center">
+              <span class="material-symbols-outlined text-3xl text-outline">person</span>
+            </div>
+          </div>
+          <span class="font-label-sm text-[11px] font-normal truncate w-[70px] text-center">coffee.lover</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 flex-shrink-0 cursor-pointer story-item">
+          <div class="w-[66px] h-[66px] rounded-full p-[2px] bg-outline-variant/50">
+            <div class="w-full h-full rounded-full border-[2px] border-background overflow-hidden bg-surface-container flex items-center justify-center">
+              <span class="material-symbols-outlined text-3xl text-outline">person</span>
+            </div>
+          </div>
+          <span class="font-label-sm text-[11px] font-normal truncate w-[70px] text-center text-on-surface-variant">anon_88</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 flex-shrink-0 cursor-pointer story-item">
+          <div class="w-[66px] h-[66px] rounded-full p-[2px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500">
+            <div class="w-full h-full rounded-full border-[2px] border-background overflow-hidden bg-surface-container flex items-center justify-center">
+              <span class="material-symbols-outlined text-3xl text-outline">person</span>
+            </div>
+          </div>
+          <span class="font-label-sm text-[11px] font-normal truncate w-[70px] text-center">barista_life</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 flex-shrink-0 cursor-pointer story-item">
+          <div class="w-[66px] h-[66px] rounded-full p-[2px] bg-outline-variant/50">
+            <div class="w-full h-full rounded-full border-[2px] border-background overflow-hidden bg-surface-container flex items-center justify-center">
+              <span class="material-symbols-outlined text-3xl text-outline">person</span>
+            </div>
+          </div>
+          <span class="font-label-sm text-[11px] font-normal truncate w-[70px] text-center text-on-surface-variant">user_901</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 px-4 md:px-margin-desktop">
+      
+      <!-- Left Column: Main Feed -->
+      <div class="lg:col-span-7 flex flex-col gap-12 gs-reveal">
+        <h2 class="font-label-sm uppercase tracking-widest text-on-surface-variant border-b border-outline-variant/30 pb-4">Trending Coffee Moments</h2>
+        
+        <!-- Post 1 -->
+        <article class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 post-card">
+          <!-- Post Header -->
+          <div class="flex items-center gap-3 p-4 bg-background">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-accent-yellow to-primary p-[2px]">
+              <div class="w-full h-full rounded-full border-2 border-background overflow-hidden bg-surface-container flex items-center justify-center">
+                <span class="material-symbols-outlined text-outline">person</span>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-bold text-sm">coffee.lover</span>
+              <span class="text-xs text-on-surface-variant">Tokyo, Japan</span>
+            </div>
+            <button class="ml-auto material-symbols-outlined text-on-surface-variant">more_horiz</button>
+          </div>
+          <!-- Post Image -->
+          <div class="overflow-hidden bg-black/5">
+            <img src="/assets/img/coffe3.png" class="w-full aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" alt="Geisha Pour Over">
+          </div>
+          <!-- Post Actions -->
+          <div class="p-4 bg-background">
+            <div class="flex items-center gap-4 mb-3">
+              <button class="material-symbols-outlined text-[28px] hover:text-error transition-colors like-btn" data-liked="false">favorite</button>
+              <button class="material-symbols-outlined text-[28px] hover:text-primary transition-colors share-btn">send</button>
+              <button class="material-symbols-outlined text-[28px] ml-auto hover:text-primary transition-colors">bookmark</button>
+            </div>
+            <div class="flex items-center gap-4 mb-3 text-sm font-semibold">
+              <span>1,245 likes</span>
+              <span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">visibility</span> 12.4k views</span>
+            </div>
+            <p class="text-sm leading-relaxed"><span class="font-bold mr-2">coffee.lover</span>The new Geisha Pour Over is absolutely unreal. The floral notes are perfect. ☕✨ #RIVOReserve</p>
+            <p class="text-xs text-on-surface-variant mt-2 uppercase tracking-wide">2 HOURS AGO</p>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 post-card">
+          <div class="flex items-center gap-3 p-4 bg-background">
+            <div class="w-10 h-10 rounded-full bg-outline-variant/50 p-[2px]">
+              <div class="w-full h-full rounded-full border-2 border-background overflow-hidden bg-surface-container flex items-center justify-center">
+                <span class="material-symbols-outlined text-outline">person</span>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-bold text-sm">anon_88</span>
+              <span class="text-xs text-on-surface-variant">RIVO Lab</span>
+            </div>
+            <button class="ml-auto material-symbols-outlined text-on-surface-variant">more_horiz</button>
+          </div>
+          <div class="overflow-hidden bg-black/5">
+            <img src="/assets/img/coofee4.png" class="w-full aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" alt="Morning aesthetics">
+          </div>
+          <div class="p-4 bg-background">
+            <div class="flex items-center gap-4 mb-3">
+              <button class="material-symbols-outlined text-[28px] hover:text-error transition-colors like-btn" data-liked="false">favorite</button>
+              <button class="material-symbols-outlined text-[28px] hover:text-primary transition-colors share-btn">send</button>
+              <button class="material-symbols-outlined text-[28px] ml-auto hover:text-primary transition-colors">bookmark</button>
+            </div>
+            <div class="flex items-center gap-4 mb-3 text-sm font-semibold">
+              <span>892 likes</span>
+              <span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">visibility</span> 8.1k views</span>
+            </div>
+            <p class="text-sm leading-relaxed"><span class="font-bold mr-2">anon_88</span>Morning aesthetics at the lab. Dialing in precision.</p>
+            <p class="text-xs text-on-surface-variant mt-2 uppercase tracking-wide">5 HOURS AGO</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Right Column: Reels & Editorial -->
+      <div class="lg:col-span-5 flex flex-col gap-12 mt-16 lg:mt-0">
+        
+
+        <!-- Behind The Beans (Editorial) -->
+        <section class="bg-surface-container rounded-3xl p-8 relative overflow-hidden group shadow-sm hover:shadow-md transition-shadow duration-300 gs-reveal">
+          <div class="absolute -right-10 -top-10 w-40 h-40 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-1000"></div>
+          <h2 class="font-label-sm uppercase tracking-widest text-primary mb-4 relative z-10">Editorial</h2>
+          <h3 class="font-headline-lg text-2xl mb-4 relative z-10">Behind The Beans</h3>
+          <p class="text-on-surface-variant text-sm mb-6 relative z-10 leading-relaxed">Discover the rigorous scientific methodology behind our latest single-origin reserve. From soil analysis to precision roasting, we leave nothing to chance.</p>
+          <a href="/about.html" class="inline-flex items-center gap-2 text-sm font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors relative z-10">
+            Read The Full Story <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Lifestyle Gallery (Explore Masonry) -->
+    <section class="mt-24 px-4 md:px-margin-desktop gs-reveal">
+      <div class="flex justify-between items-end border-b border-outline-variant/30 pb-4 mb-8">
+        <h2 class="font-label-sm uppercase tracking-widest text-on-surface-variant">Coffee Lifestyle Gallery</h2>
+      </div>
+      
+      <!-- CSS Columns Masonry -->
+      <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+        <!-- Masonry Item -->
+        <div class="relative rounded-xl overflow-hidden group cursor-pointer break-inside-avoid">
+          <img src="/assets/img/coorffe5.png" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" alt="Gallery item">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white backdrop-blur-[2px]">
+            <div class="flex items-center gap-4 font-bold text-lg">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined">favorite</span> 2.4k</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined">visibility</span> 18k</span>
+            </div>
+          </div>
+        </div>
+        <!-- Masonry Item -->
+        <div class="relative rounded-xl overflow-hidden group cursor-pointer break-inside-avoid">
+          <img src="/assets/img/coffe6.png" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" alt="Gallery item">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white backdrop-blur-[2px]">
+            <div class="flex items-center gap-4 font-bold text-lg">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined">favorite</span> 1.1k</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined">visibility</span> 9k</span>
+            </div>
+          </div>
+        </div>
+        <!-- Masonry Item -->
+        <div class="relative rounded-xl overflow-hidden group cursor-pointer break-inside-avoid">
+          <img src="/assets/img/coffe7.png" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" alt="Gallery item">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white backdrop-blur-[2px]">
+            <div class="flex items-center gap-4 font-bold text-lg">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined">favorite</span> 3.8k</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined">visibility</span> 42k</span>
+            </div>
+          </div>
+        </div>
+        <!-- Masonry Item -->
+        <div class="relative rounded-xl overflow-hidden group cursor-pointer break-inside-avoid">
+          <img src="/assets/img/cofee8.png" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" alt="Gallery item">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white backdrop-blur-[2px]">
+            <div class="flex items-center gap-4 font-bold text-lg">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined">favorite</span> 956</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined">visibility</span> 7.2k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex justify-center mt-12">
+        <button class="bg-black text-white px-10 py-4 rounded-full font-label-sm uppercase tracking-widest font-bold hover:bg-primary transition-colors flex items-center gap-2 group">
+          <span class="material-symbols-outlined animate-bounce">autorenew</span> Load More Moments
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <footer class="relative bg-black text-white py-12 md:py-20 px-6 md:px-margin-desktop overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0 opacity-40">
+      <source src="/v2.mp4" type="video/mp4">
+    </video>
+    <div class="relative z-10 max-w-container-max mx-auto grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 border-b border-white/20 pb-8 md:pb-12">
+      
+      <!-- Brand -->
+      <div class="col-span-2 lg:col-span-1 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <img src="/assets/img/logo.png" alt="Rivo Logo" class="h-8 md:h-10 w-auto object-contain" />
+          <span class="font-headline-lg text-lg md:text-xl font-extrabold tracking-tight">RIVO</span>
+        </div>
+        <p class="text-white/70 font-body-sm text-sm">Scientific Elegance. Redefining coffee through rigorous precision.</p>
+      </div>
+
+      <!-- Links -->
+      <div class="col-span-1">
+        <h4 class="font-label-sm uppercase tracking-widest mb-4 text-white">Experience</h4>
+        <ul class="space-y-3 text-white/60 text-sm">
+          <li><a href="/menu.html" class="hover:text-white transition-colors">The Menu</a></li>
+          <li><a href="/about.html" class="hover:text-white transition-colors">Our Story</a></li>
+          <li><a href="/gallery.html" class="hover:text-white transition-colors">Journal</a></li>
+        </ul>
+      </div>
+
+      <!-- Connect -->
+      <div class="col-span-1">
+        <h4 class="font-label-sm uppercase tracking-widest mb-4 text-white">Connect</h4>
+        <ul class="space-y-3 text-white/60 text-sm">
+          <li><a href="/social.html" class="hover:text-white transition-colors">Community</a></li>
+          <li><a href="/contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-span-2 lg:col-span-1">
+        <h4 class="font-label-sm uppercase tracking-widest mb-4 text-white">Visit Us</h4>
+        <div class="text-white/60 text-sm space-y-3">
+          <p class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-base shrink-0 mt-0.5">location_on</span>
+            <span class="leading-relaxed">29Q6+2XG بجوار عصير الكتب، 17ش Al Teraa St, Mansoura Qism 2, El Mansoura, Dakahlia Governorate 35511</span>
+          </p>
+          <p class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-base shrink-0">call</span>
+            <a href="tel:01009859330" class="hover:text-white transition-colors text-lg font-bold">01009859330</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="relative z-10 max-w-container-max mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-white/40 font-label-sm uppercase tracking-widest text-[10px]">
+      <p>&copy; 2026 RIVO.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white transition-colors">PRIVACY</a>
+        <a href="#" class="hover:text-white transition-colors">TERMS</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sidebar Menu -->
+  <div id="sidebar-menu" class="fixed inset-y-0 right-0 w-72 bg-black/95 backdrop-blur-xl z-[200] transform translate-x-full transition-transform duration-500 flex flex-col p-8 border-l border-white/10">
+    <div class="flex justify-end mb-12">
+      <button id="close-sidebar" class="text-white hover:text-blue-400 transition-colors">
+        <span class="material-symbols-outlined text-3xl">close</span>
+      </button>
+    </div>
+    <div class="flex flex-col gap-8 text-white font-headline-lg text-2xl tracking-widest uppercase items-center">
+      <a href="/" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Home</a>
+      <a href="/menu.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Menu</a>
+      <a href="/about.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Story</a>
+      <a href="/gallery.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Gallery</a>
+      <a href="/social.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Community</a>
+      <a href="/contact.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Contact</a>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

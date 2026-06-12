@@ -12,20 +12,26 @@
   <!-- Navigation -->
   <header class="fixed top-0 w-full z-[100] transition-all duration-500 py-6 px-margin-desktop bg-black/90 backdrop-blur-md border-b border-white/10" id="navbar">
     <nav class="flex justify-between items-center max-w-container-max mx-auto">
-      <div class="flex items-center gap-4">
-        <img src="/coffee.png" alt="Rivo Logo" class="w-10 h-10 object-contain invert brightness-0" />
-        <span class="font-headline-lg text-[24px] font-extrabold text-white tracking-tight">RIVO</span>
+      <div class="flex items-center gap-3 md:gap-4">
+        <img src="/assets/img/logo.png" alt="Rivo Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain" />
+        <span class="font-headline-lg text-xl md:text-[24px] font-extrabold text-white tracking-tight hidden sm:block">RIVO</span>
       </div>
       <div class="hidden md:flex items-center gap-10 text-white font-label-sm uppercase tracking-widest text-sm">
         <a href="/" class="hover:opacity-70 transition-opacity">Home</a>
         <a href="/menu.html" class="hover:opacity-70 transition-opacity">Menu</a>
         <a href="/about.html" class="opacity-50 pointer-events-none">Story</a>
         <a href="/gallery.html" class="hover:opacity-70 transition-opacity">Gallery</a>
+        <a href="/social.html" class="hover:opacity-70 transition-opacity">Community</a>
         <a href="/contact.html" class="hover:opacity-70 transition-opacity">Contact</a>
       </div>
-      <button class="bg-white text-black px-8 py-3 rounded-full font-label-sm uppercase tracking-widest font-bold hover:scale-105 transition-transform duration-300">
-        Order
-      </button>
+      <div class="flex items-center gap-3 md:gap-6">
+        <button class="bg-white text-black px-5 py-2 md:px-8 md:py-3 rounded-full font-label-sm uppercase tracking-widest text-xs md:text-sm font-bold hover:scale-105 transition-transform duration-300 whitespace-nowrap hidden md:block">
+          Order
+        </button>
+        <button id="hamburger-btn" class="md:hidden text-white flex items-center justify-center ml-2 hover:text-blue-400 transition-colors">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -54,40 +60,83 @@
     </section>
   </main>
 
-  <footer class="bg-black text-white py-20 px-margin-desktop">
-    <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/20 pb-16">
-      <div class="md:col-span-2">
-        <div class="flex items-center gap-4 mb-6">
-          <img src="/coffee.png" alt="Rivo Logo" class="w-10 h-10 object-contain invert brightness-0" />
-          <span class="font-headline-lg text-[24px] font-extrabold tracking-tight">RIVO</span>
+  <footer class="relative bg-black text-white py-12 md:py-20 px-6 md:px-margin-desktop overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0 opacity-40">
+      <source src="/v2.mp4" type="video/mp4">
+    </video>
+    <div class="relative z-10 max-w-container-max mx-auto grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 border-b border-white/20 pb-8 md:pb-12">
+      
+      <!-- Brand -->
+      <div class="col-span-2 lg:col-span-1 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <img src="/assets/img/logo.png" alt="Rivo Logo" class="h-8 md:h-10 w-auto object-contain" />
+          <span class="font-headline-lg text-lg md:text-xl font-extrabold tracking-tight">RIVO</span>
         </div>
-        <p class="text-white/60 font-body-lg max-w-md">Scientific Elegance. We redefine the coffee experience through rigorous precision and luxury design.</p>
+        <p class="text-white/70 font-body-sm text-sm">Scientific Elegance. Redefining coffee through rigorous precision.</p>
       </div>
-      <div>
-        <h4 class="font-label-sm uppercase tracking-widest mb-6">Experience</h4>
-        <ul class="space-y-4 text-white/60">
+
+      <!-- Links -->
+      <div class="col-span-1">
+        <h4 class="font-label-sm uppercase tracking-widest mb-4 text-white">Experience</h4>
+        <ul class="space-y-3 text-white/60 text-sm">
           <li><a href="/menu.html" class="hover:text-white transition-colors">The Menu</a></li>
           <li><a href="/about.html" class="hover:text-white transition-colors">Our Story</a></li>
           <li><a href="/gallery.html" class="hover:text-white transition-colors">Journal</a></li>
         </ul>
       </div>
-      <div>
-        <h4 class="font-label-sm uppercase tracking-widest mb-6">Connect</h4>
-        <ul class="space-y-4 text-white/60">
+
+      <!-- Connect -->
+      <div class="col-span-1">
+        <h4 class="font-label-sm uppercase tracking-widest mb-4 text-white">Connect</h4>
+        <ul class="space-y-3 text-white/60 text-sm">
+          <li><a href="/social.html" class="hover:text-white transition-colors">Community</a></li>
           <li><a href="/contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
           <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
         </ul>
       </div>
+
+      <!-- Contact Info -->
+      <div class="col-span-2 lg:col-span-1">
+        <h4 class="font-label-sm uppercase tracking-widest mb-4 text-white">Visit Us</h4>
+        <div class="text-white/60 text-sm space-y-3">
+          <p class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-base shrink-0 mt-0.5">location_on</span>
+            <span class="leading-relaxed">29Q6+2XG بجوار عصير الكتب، 17ش Al Teraa St, Mansoura Qism 2, El Mansoura, Dakahlia Governorate 35511</span>
+          </p>
+          <p class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-base shrink-0">call</span>
+            <a href="tel:01009859330" class="hover:text-white transition-colors text-lg font-bold">01009859330</a>
+          </p>
+        </div>
+      </div>
+
     </div>
-    <div class="max-w-container-max mx-auto pt-8 flex flex-col md:flex-row justify-between text-white/40 font-label-sm uppercase tracking-widest text-[10px]">
-      <p>&copy; 2026 RIVO RESERVE. ALL RIGHTS RESERVED.</p>
-      <div class="flex gap-6 mt-4 md:mt-0">
-        <a href="#" class="hover:text-white">PRIVACY</a>
-        <a href="#" class="hover:text-white">TERMS</a>
+    
+    <div class="relative z-10 max-w-container-max mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-white/40 font-label-sm uppercase tracking-widest text-[10px]">
+      <p>&copy; 2026 RIVO.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white transition-colors">PRIVACY</a>
+        <a href="#" class="hover:text-white transition-colors">TERMS</a>
       </div>
     </div>
   </footer>
+
+  <!-- Sidebar Menu -->
+  <div id="sidebar-menu" class="fixed inset-y-0 right-0 w-72 bg-black/95 backdrop-blur-xl z-[200] transform translate-x-full transition-transform duration-500 flex flex-col p-8 border-l border-white/10">
+    <div class="flex justify-end mb-12">
+      <button id="close-sidebar" class="text-white hover:text-blue-400 transition-colors">
+        <span class="material-symbols-outlined text-3xl">close</span>
+      </button>
+    </div>
+    <div class="flex flex-col gap-8 text-white font-headline-lg text-2xl tracking-widest uppercase items-center">
+      <a href="/" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Home</a>
+      <a href="/menu.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Menu</a>
+      <a href="/about.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Story</a>
+      <a href="/gallery.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Gallery</a>
+      <a href="/social.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Community</a>
+      <a href="/contact.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Contact</a>
+    </div>
+  </div>
 
   <script type="module" src="/src/main.js"></script>
 </body>

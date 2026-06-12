@@ -6,6 +6,7 @@ export default {
     "./about.html",
     "./gallery.html",
     "./contact.html",
+    "./social.html",
     "./src/**/*.{js,ts,jsx,tsx,html}",
   ],
   darkMode: "class",

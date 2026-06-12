@@ -99,14 +99,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // Horizontal Collection Scroll
   const collectionTrack = document.getElementById('collection-track');
   if (collectionTrack) {
+    let getScrollAmount = () => -(collectionTrack.scrollWidth - window.innerWidth);
+    
     let scrollTween = gsap.to(collectionTrack, {
-      xPercent: -66.66, // Adjust based on how many cards. 30vw * 4 cards + gaps = roughly 130vw overflow.
+      x: getScrollAmount,
       ease: 'none',
       scrollTrigger: {
         trigger: '#collection-section',
         pin: true,
         scrub: 1,
-        end: '+=2000'
+        end: () => "+=" + Math.abs(getScrollAmount()),
+        invalidateOnRefresh: true
       }
     });
   }

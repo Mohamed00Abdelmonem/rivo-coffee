@@ -8,24 +8,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
 </head>
 <body class="bg-background text-on-background overflow-x-hidden font-body-md">
-  
+
+
   <!-- Navigation -->
-  <header class="fixed top-0 w-full z-[100] transition-all duration-500 py-6 px-margin-desktop mix-blend-difference" id="navbar">
+  <header class="fixed top-0 w-full z-[100] transition-all duration-500 py-6 px-margin-desktop" id="navbar">
     <nav class="flex justify-between items-center max-w-container-max mx-auto">
-      <div class="flex items-center gap-4">
-        <img src="/coffee.png" alt="Rivo Logo" class="w-10 h-10 object-contain invert brightness-0" />
-        <span class="font-headline-lg text-[24px] font-extrabold text-white tracking-tight">RIVO</span>
+      <div class="flex items-center gap-3 md:gap-4">
+        <img src="/assets/img/logo.png" alt="Rivo Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain" />
+        <span class="font-headline-lg text-xl md:text-[24px] font-extrabold text-white tracking-tight hidden sm:block">RIVO</span>
       </div>
       <div class="hidden md:flex items-center gap-10 text-white font-label-sm uppercase tracking-widest text-sm">
         <a href="/" class="hover:opacity-70 transition-opacity">Home</a>
         <a href="/menu.html" class="hover:opacity-70 transition-opacity">Menu</a>
         <a href="/about.html" class="hover:opacity-70 transition-opacity">Story</a>
         <a href="/gallery.html" class="hover:opacity-70 transition-opacity">Gallery</a>
+        <a href="/social.html" class="hover:opacity-70 transition-opacity">Community</a>
         <a href="/contact.html" class="hover:opacity-70 transition-opacity">Contact</a>
       </div>
-      <button class="bg-white text-black px-8 py-3 rounded-full font-label-sm uppercase tracking-widest font-bold hover:scale-105 transition-transform duration-300">
-        Order
-      </button>
+      <div class="flex items-center gap-3 md:gap-6">
+        <button class="bg-white text-black px-5 py-2 md:px-8 md:py-3 rounded-full font-label-sm uppercase tracking-widest text-xs md:text-sm font-bold hover:scale-105 transition-transform duration-300 whitespace-nowrap hidden md:block">
+          Order
+        </button>
+        <button id="hamburger-btn" class="md:hidden text-white flex items-center justify-center ml-2 hover:text-blue-400 transition-colors">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -93,116 +100,52 @@
     </section>
 
     <!-- SECTION 3: SIGNATURE COLLECTION -->
-    <section class="py-32 bg-surface-container overflow-hidden" id="collection-section">
-      <div class="px-margin-desktop max-w-container-max mx-auto mb-16 flex justify-between items-end">
+    <section class="py-16 md:py-32 bg-surface-container overflow-hidden" id="collection-section">
+      <div class="px-4 md:px-margin-desktop max-w-container-max mx-auto mb-10 md:mb-16 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
         <div>
-          <h2 class="font-headline-xl text-5xl text-on-surface reveal-text">Signature Collection</h2>
+          <h2 class="font-headline-xl text-4xl md:text-5xl text-on-surface reveal-text">Signature Collection</h2>
         </div>
         <div class="font-label-sm uppercase tracking-widest text-on-surface-variant">Drag or Scroll</div>
       </div>
       
       <!-- Horizontal Scroll Wrapper -->
-      <div class="collection-wrapper flex gap-8 px-margin-desktop w-[300vw]" id="collection-track">
+      <div class="collection-wrapper flex gap-4 md:gap-8 px-4 md:px-margin-desktop w-max" id="collection-track">
         <!-- Card 1 -->
-        <div class="w-[30vw] h-[60vh] shrink-0 relative group rounded-3xl overflow-hidden collection-card">
-          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Espresso" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-10 flex flex-col justify-end">
-            <h3 class="text-white font-headline-lg text-3xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Onyx Espresso</h3>
-            <p class="text-white/70 font-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Deep cocoa, black cherry, velvety finish.</p>
+        <div class="w-[75vw] md:w-[40vw] lg:w-[30vw] h-[50vh] md:h-[60vh] shrink-0 relative group rounded-3xl overflow-hidden collection-card">
+          <img src="/assets/img/coffe3.png" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Espresso" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 md:p-10 flex flex-col justify-end">
+            <h3 class="text-white font-headline-lg text-2xl md:text-3xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Onyx Espresso</h3>
+            <p class="text-white/70 font-body-sm md:font-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Deep cocoa, black cherry, velvety finish.</p>
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="w-[30vw] h-[60vh] shrink-0 relative group rounded-3xl overflow-hidden collection-card">
-          <img src="https://images.unsplash.com/photo-1461023058943-07cb1ceac002?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Latte Art" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-10 flex flex-col justify-end">
-            <h3 class="text-white font-headline-lg text-3xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Silk Latte</h3>
-            <p class="text-white/70 font-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Micro-foamed perfection with roasted hazelnut notes.</p>
+        <div class="w-[75vw] md:w-[40vw] lg:w-[30vw] h-[50vh] md:h-[60vh] shrink-0 relative group rounded-3xl overflow-hidden collection-card">
+          <img src="/assets/img/coofee4.png" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Latte Art" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 md:p-10 flex flex-col justify-end">
+            <h3 class="text-white font-headline-lg text-2xl md:text-3xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Silk Latte</h3>
+            <p class="text-white/70 font-body-sm md:font-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Micro-foamed perfection with roasted hazelnut notes.</p>
           </div>
         </div>
         <!-- Card 3 -->
-        <div class="w-[30vw] h-[60vh] shrink-0 relative group rounded-3xl overflow-hidden collection-card">
-          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Cold Brew" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-10 flex flex-col justify-end">
-            <h3 class="text-white font-headline-lg text-3xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Nitrogen Draft</h3>
-            <p class="text-white/70 font-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">24-hour steeping, infused for a cascading stout-like pour.</p>
+        <div class="w-[75vw] md:w-[40vw] lg:w-[30vw] h-[50vh] md:h-[60vh] shrink-0 relative group rounded-3xl overflow-hidden collection-card">
+          <img src="/assets/img/coorffe5.png" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Cold Brew" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 md:p-10 flex flex-col justify-end">
+            <h3 class="text-white font-headline-lg text-2xl md:text-3xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Nitrogen Draft</h3>
+            <p class="text-white/70 font-body-sm md:font-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">24-hour steeping, infused for a cascading stout-like pour.</p>
           </div>
         </div>
         <!-- Card 4 -->
-        <div class="w-[30vw] h-[60vh] shrink-0 relative group rounded-3xl overflow-hidden collection-card">
-          <img src="https://images.unsplash.com/photo-1507133750070-4ed01eb3a778?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Pour Over" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-10 flex flex-col justify-end">
-            <h3 class="text-white font-headline-lg text-3xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Geisha Reserve</h3>
-            <p class="text-white/70 font-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Award-winning pour-over with jasmine and bergamot.</p>
+        <div class="w-[75vw] md:w-[40vw] lg:w-[30vw] h-[50vh] md:h-[60vh] shrink-0 relative group rounded-3xl overflow-hidden collection-card">
+          <img src="/assets/img/coffe6.png" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Pour Over" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 md:p-10 flex flex-col justify-end">
+            <h3 class="text-white font-headline-lg text-2xl md:text-3xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Geisha Reserve</h3>
+            <p class="text-white/70 font-body-sm md:font-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Award-winning pour-over with jasmine and bergamot.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 4: VIDEO EXPERIENCE (v1.mp4) -->
-    <section class="h-[200vh] relative" id="video-experience">
-      <div class="sticky top-0 h-screen w-full overflow-hidden bg-black">
-        <video muted loop playsinline class="w-full h-full object-cover opacity-50" id="v1-video">
-          <source src="/v1.mp4" type="video/mp4">
-        </video>
-        
-        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div class="text-center px-4 mix-blend-difference text-white">
-            <h2 class="font-headline-xl text-[8vw] leading-none font-black uppercase tracking-tighter" id="v1-text">
-              Precision<br/>Extraction
-            </h2>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- SECTION 5: WHY RIVO (Bento Grid) -->
-    <section class="py-32 px-margin-desktop bg-surface-container-low" id="bento-section">
-      <div class="max-w-container-max mx-auto">
-        <h2 class="font-headline-xl text-center text-5xl mb-20 reveal-text">Engineered Perfection</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[600px]">
-          <!-- Bento 1 -->
-          <div class="md:col-span-2 bg-white rounded-3xl p-10 flex flex-col justify-between shadow-sm hover:shadow-xl transition-shadow bento-card">
-            <div>
-              <span class="material-symbols-outlined text-primary text-4xl mb-4 block">science</span>
-              <h3 class="font-headline-lg text-3xl mb-4">Laboratory Standards</h3>
-              <p class="text-on-surface-variant">We control temperature to the 0.1°C and pressure to the exact bar. Coffee is chemistry, and our lab is pristine.</p>
-            </div>
-            <div class="h-40 bg-surface-container rounded-2xl mt-8 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-80" alt="Coffee science" />
-            </div>
-          </div>
-          
-          <!-- Bento 2 -->
-          <div class="bg-primary text-white rounded-3xl p-10 flex flex-col justify-between shadow-sm hover:shadow-xl transition-shadow bento-card relative overflow-hidden">
-            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
-            <div>
-              <span class="material-symbols-outlined text-white text-4xl mb-4 block">eco</span>
-              <h3 class="font-headline-lg text-3xl mb-4">Direct Trade</h3>
-              <p class="text-white/80">Sourced directly from micro-lot farms ensuring sustainability and premium quality.</p>
-            </div>
-          </div>
-
-          <!-- Bento 3 -->
-          <div class="bg-surface-container-high rounded-3xl p-10 flex flex-col justify-center items-center text-center shadow-sm hover:shadow-xl transition-shadow bento-card">
-            <h3 class="font-headline-xl text-5xl text-primary mb-2">99.9%</h3>
-            <p class="font-label-sm uppercase tracking-widest text-on-surface-variant">Purity Rating</p>
-          </div>
-
-          <!-- Bento 4 -->
-          <div class="md:col-span-2 bg-white rounded-3xl p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm hover:shadow-xl transition-shadow bento-card">
-            <div class="flex-1">
-              <span class="material-symbols-outlined text-primary text-4xl mb-4 block">diamond</span>
-              <h3 class="font-headline-lg text-3xl mb-4">Award-Winning</h3>
-              <p class="text-on-surface-variant">Voted Best Specialty Roaster 2025. Recognized by global culinary authorities.</p>
-            </div>
-            <div class="w-32 h-32 shrink-0">
-              <img src="/coffee.png" class="w-full h-full object-contain" alt="Rivo Seal" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- SECTION 6: FEATURED PRODUCTS -->
     <section class="py-32 px-margin-desktop bg-background" id="products-section">
@@ -215,7 +158,7 @@
         <!-- Prod 1 -->
         <div class="product-3d-card relative group cursor-pointer perspective-1000">
           <div class="inner-3d w-full aspect-[4/5] bg-surface-container-low rounded-[40px] overflow-hidden relative shadow-2xl transition-transform duration-200">
-            <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=800&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply" alt="Latte" />
+            <img src="/coffee.png" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply" alt="Latte" />
             <div class="absolute inset-0 p-12 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
               <div class="translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                 <span class="font-label-sm uppercase tracking-widest text-accent-yellow mb-2 block">New Release</span>
@@ -230,7 +173,7 @@
         <!-- Prod 2 -->
         <div class="product-3d-card relative group cursor-pointer perspective-1000 md:mt-24">
           <div class="inner-3d w-full aspect-[4/5] bg-surface-container-high rounded-[40px] overflow-hidden relative shadow-2xl transition-transform duration-200">
-            <img src="https://images.unsplash.com/photo-1495474472205-51f774ca780f?q=80&w=800&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply" alt="Dark Coffee" />
+            <img src="/assets/img/coffe3.png" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply" alt="Dark Coffee" />
             <div class="absolute inset-0 p-12 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
               <div class="translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                 <span class="font-label-sm uppercase tracking-widest text-accent-yellow mb-2 block">Reserve</span>
@@ -245,55 +188,7 @@
       </div>
     </section>
 
-    <!-- SECTION 7: VIDEO STORY (v2.mp4 scrub) -->
-    <section class="h-[300vh] bg-black relative" id="video-story">
-      <div class="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
-        <!-- Scrubbing Video -->
-        <video muted playsinline class="w-full h-full object-cover opacity-60" id="v2-video">
-          <source src="/v2.mp4" type="video/mp4">
-        </video>
-        
-        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div class="max-w-4xl text-center px-4">
-            <h2 class="font-headline-xl text-4xl md:text-6xl text-white mb-8 opacity-0" id="v2-text-1">A Journey from Soil...</h2>
-            <h2 class="font-headline-xl text-4xl md:text-6xl text-white mb-8 opacity-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full" id="v2-text-2">...to the Perfect Cup.</h2>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- SECTION 8: TESTIMONIALS -->
-    <section class="py-32 px-margin-desktop bg-surface-container-lowest overflow-hidden">
-      <div class="max-w-container-max mx-auto text-center mb-16">
-        <h2 class="font-headline-xl text-5xl mb-4 reveal-text">The Verdict</h2>
-      </div>
-
-      <div class="relative w-full max-w-5xl mx-auto h-[400px]" id="testimonial-slider">
-        <!-- Testimonial cards absolute positioned -->
-        <div class="absolute inset-0 glass-effect bg-white/40 border border-white/60 rounded-3xl p-12 flex flex-col justify-center items-center text-center shadow-xl test-card opacity-100 z-20">
-          <div class="flex text-accent-yellow mb-6">
-            <span class="material-symbols-outlined fill text-2xl">star</span>
-            <span class="material-symbols-outlined fill text-2xl">star</span>
-            <span class="material-symbols-outlined fill text-2xl">star</span>
-            <span class="material-symbols-outlined fill text-2xl">star</span>
-            <span class="material-symbols-outlined fill text-2xl">star</span>
-          </div>
-          <p class="font-headline-lg text-2xl md:text-3xl text-on-surface mb-8 italic">"The most sophisticated coffee experience available today. RIVO has completely ruined ordinary coffee for me."</p>
-          <span class="font-label-sm uppercase tracking-widest font-bold">Alexandra V. — Michelin Star Chef</span>
-        </div>
-        <div class="absolute inset-0 glass-effect bg-white/40 border border-white/60 rounded-3xl p-12 flex flex-col justify-center items-center text-center shadow-xl test-card opacity-0 translate-x-full z-10">
-          <div class="flex text-accent-yellow mb-6">
-            <span class="material-symbols-outlined fill text-2xl">star</span>
-            <span class="material-symbols-outlined fill text-2xl">star</span>
-            <span class="material-symbols-outlined fill text-2xl">star</span>
-            <span class="material-symbols-outlined fill text-2xl">star</span>
-            <span class="material-symbols-outlined fill text-2xl">star</span>
-          </div>
-          <p class="font-headline-lg text-2xl md:text-3xl text-on-surface mb-8 italic">"Architecturally beautiful, sensorially perfect. Their Nitrogen Draft is a masterclass in texture."</p>
-          <span class="font-label-sm uppercase tracking-widest font-bold">Marcus T. — Design Director</span>
-        </div>
-      </div>
-    </section>
 
     <!-- SECTION 9: STATS -->
     <section class="py-24 bg-primary text-white" id="stats-section">
@@ -325,90 +220,127 @@
           <a href="#" class="font-label-sm uppercase tracking-widest text-primary hover:underline">@RIVOReserve</a>
         </div>
         
-        <div class="columns-1 md:columns-3 lg:columns-4 gap-6 space-y-6 gallery-masonry">
+        <div class="columns-1 md:columns-3 gap-6 space-y-6 gallery-masonry">
           <div class="relative group rounded-2xl overflow-hidden cursor-pointer bg-surface-container">
-            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=600&auto=format&fit=crop" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" alt="Insta 1" />
+            <img src="/assets/img/coofee4.png" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" alt="Insta 1" />
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <span class="material-symbols-outlined text-white text-3xl">favorite</span>
             </div>
           </div>
           <div class="relative group rounded-2xl overflow-hidden cursor-pointer bg-surface-container">
-            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=600&auto=format&fit=crop" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" alt="Insta 2" />
+            <img src="/assets/img/coorffe5.png" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" alt="Insta 2" />
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <span class="material-symbols-outlined text-white text-3xl">favorite</span>
             </div>
           </div>
           <div class="relative group rounded-2xl overflow-hidden cursor-pointer bg-surface-container">
-            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600&auto=format&fit=crop" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" alt="Insta 3" />
+            <img src="/assets/img/coffe6.png" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" alt="Insta 3" />
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <span class="material-symbols-outlined text-white text-3xl">favorite</span>
             </div>
           </div>
           <div class="relative group rounded-2xl overflow-hidden cursor-pointer bg-surface-container">
-            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=600&auto=format&fit=crop" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" alt="Insta 4" />
+            <img src="/assets/img/coffe7.png" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" alt="Insta 4" />
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span class="material-symbols-outlined text-white text-3xl">favorite</span>
+            </div>
+          </div>
+          <div class="relative group rounded-2xl overflow-hidden cursor-pointer bg-surface-container">
+            <img src="/assets/img/cofee8.png" class="w-full h-auto transition-transform duration-700 group-hover:scale-110" alt="Insta 5" />
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <span class="material-symbols-outlined text-white text-3xl">favorite</span>
             </div>
           </div>
         </div>
+
+        <div class="flex justify-center mt-12">
+          <a href="/gallery.html" class="bg-black text-white px-10 py-4 rounded-full font-label-sm uppercase tracking-widest font-bold hover:bg-primary transition-colors whitespace-nowrap flex items-center gap-2">
+            Show More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- SECTION 11: NEWSLETTER -->
-    <section class="py-32 px-margin-desktop bg-surface-container-high relative overflow-hidden flex items-center justify-center">
-      <!-- Animated Bg -->
-      <div class="absolute w-[600px] h-[600px] bg-primary/20 rounded-full blur-[100px] mix-blend-multiply animate-[pulse_8s_infinite] -top-20 -left-20"></div>
-      <div class="absolute w-[500px] h-[500px] bg-blue-300/30 rounded-full blur-[80px] mix-blend-multiply animate-[pulse_10s_infinite_reverse] bottom-0 right-0"></div>
-
-      <div class="glass-effect bg-white/60 border border-white p-16 rounded-[40px] shadow-2xl relative z-10 max-w-3xl w-full text-center">
-        <h2 class="font-headline-xl text-4xl md:text-5xl mb-6">Join the Reserve</h2>
-        <p class="font-body-lg text-on-surface-variant mb-10">Access exclusive releases, private tasting events, and laboratory notes.</p>
-        
-        <form class="flex flex-col md:flex-row gap-4 justify-center">
-          <input type="email" placeholder="Your Email Address" class="px-8 py-4 rounded-full bg-white border border-outline-variant focus:outline-none focus:ring-2 focus:ring-primary w-full md:w-96 text-on-surface" required />
-          <button type="submit" class="bg-black text-white px-10 py-4 rounded-full font-label-sm uppercase tracking-widest font-bold hover:bg-primary transition-colors whitespace-nowrap">
-            Subscribe
-          </button>
-        </form>
-      </div>
-    </section>
 
   </main>
 
-  <footer class="bg-black text-white py-20 px-margin-desktop">
-    <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/20 pb-16">
-      <div class="md:col-span-2">
-        <div class="flex items-center gap-4 mb-6">
-          <img src="/coffee.png" alt="Rivo Logo" class="w-10 h-10 object-contain invert brightness-0" />
-          <span class="font-headline-lg text-[24px] font-extrabold tracking-tight">RIVO</span>
+  <footer class="relative bg-black text-white py-12 md:py-20 px-6 md:px-margin-desktop overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0 opacity-40">
+      <source src="/v2.mp4" type="video/mp4">
+    </video>
+    <div class="relative z-10 max-w-container-max mx-auto grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 border-b border-white/20 pb-8 md:pb-12">
+      
+      <!-- Brand -->
+      <div class="col-span-2 lg:col-span-1 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <img src="/assets/img/logo.png" alt="Rivo Logo" class="h-8 md:h-10 w-auto object-contain" />
+          <span class="font-headline-lg text-lg md:text-xl font-extrabold tracking-tight">RIVO</span>
         </div>
-        <p class="text-white/60 font-body-lg max-w-md">Scientific Elegance. We redefine the coffee experience through rigorous precision and luxury design.</p>
+        <p class="text-white/70 font-body-sm text-sm">Scientific Elegance. Redefining coffee through rigorous precision.</p>
       </div>
-      <div>
-        <h4 class="font-label-sm uppercase tracking-widest mb-6">Experience</h4>
-        <ul class="space-y-4 text-white/60">
+
+      <!-- Links -->
+      <div class="col-span-1">
+        <h4 class="font-label-sm uppercase tracking-widest mb-4 text-white">Experience</h4>
+        <ul class="space-y-3 text-white/60 text-sm">
           <li><a href="/menu.html" class="hover:text-white transition-colors">The Menu</a></li>
           <li><a href="/about.html" class="hover:text-white transition-colors">Our Story</a></li>
           <li><a href="/gallery.html" class="hover:text-white transition-colors">Journal</a></li>
         </ul>
       </div>
-      <div>
-        <h4 class="font-label-sm uppercase tracking-widest mb-6">Connect</h4>
-        <ul class="space-y-4 text-white/60">
+
+      <!-- Connect -->
+      <div class="col-span-1">
+        <h4 class="font-label-sm uppercase tracking-widest mb-4 text-white">Connect</h4>
+        <ul class="space-y-3 text-white/60 text-sm">
+          <li><a href="/social.html" class="hover:text-white transition-colors">Community</a></li>
           <li><a href="/contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
           <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
         </ul>
       </div>
+
+      <!-- Contact Info -->
+      <div class="col-span-2 lg:col-span-1">
+        <h4 class="font-label-sm uppercase tracking-widest mb-4 text-white">Visit Us</h4>
+        <div class="text-white/60 text-sm space-y-3">
+          <p class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-base shrink-0 mt-0.5">location_on</span>
+            <span class="leading-relaxed">29Q6+2XG بجوار عصير الكتب، 17ش Al Teraa St, Mansoura Qism 2, El Mansoura, Dakahlia Governorate 35511</span>
+          </p>
+          <p class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-base shrink-0">call</span>
+            <a href="tel:01009859330" class="hover:text-white transition-colors text-lg font-bold">01009859330</a>
+          </p>
+        </div>
+      </div>
+
     </div>
-    <div class="max-w-container-max mx-auto pt-8 flex flex-col md:flex-row justify-between text-white/40 font-label-sm uppercase tracking-widest text-[10px]">
-      <p>&copy; 2026 RIVO RESERVE. ALL RIGHTS RESERVED.</p>
-      <div class="flex gap-6 mt-4 md:mt-0">
-        <a href="#" class="hover:text-white">PRIVACY</a>
-        <a href="#" class="hover:text-white">TERMS</a>
+    
+    <div class="relative z-10 max-w-container-max mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-white/40 font-label-sm uppercase tracking-widest text-[10px]">
+      <p>&copy; 2026 RIVO.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white transition-colors">PRIVACY</a>
+        <a href="#" class="hover:text-white transition-colors">TERMS</a>
       </div>
     </div>
   </footer>
+
+  <!-- Sidebar Menu -->
+  <div id="sidebar-menu" class="fixed inset-y-0 right-0 w-72 bg-black/95 backdrop-blur-xl z-[200] transform translate-x-full transition-transform duration-500 flex flex-col p-8 border-l border-white/10">
+    <div class="flex justify-end mb-12">
+      <button id="close-sidebar" class="text-white hover:text-blue-400 transition-colors">
+        <span class="material-symbols-outlined text-3xl">close</span>
+      </button>
+    </div>
+    <div class="flex flex-col gap-8 text-white font-headline-lg text-2xl tracking-widest uppercase items-center">
+      <a href="/" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Home</a>
+      <a href="/menu.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Menu</a>
+      <a href="/about.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Story</a>
+      <a href="/gallery.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Gallery</a>
+      <a href="/social.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Community</a>
+      <a href="/contact.html" class="hover:text-blue-400 transition-colors hover:scale-105 transform">Contact</a>
+    </div>
+  </div>
 
   <script type="module" src="/src/main.js"></script>
   <script type="module" src="/src/home.js"></script>
