@@ -98,25 +98,26 @@ document.addEventListener('DOMContentLoaded', () => {
       // Create a visual click effect
       gsap.fromTo(btn, { scale: 0.8 }, { scale: 1, duration: 0.3, ease: 'back.out(2)' });
       
-      const shareData = {
-        title: 'RIVO Community',
-        text: 'Check out this amazing post from the RIVO Community!',
-        url: window.location.href
-      };
-
-      try {
-        if (navigator.share) {
-          await navigator.share(shareData);
-        } else {
-          // Fallback to opening Instagram app or web
-          window.open('instagram://', '_self');
-          setTimeout(() => {
+      const now = Date.now();
+      
+      // Attempt direct deep link to Instagram Stories
+      window.location.href = 'instagram-stories://share';
+      
+      setTimeout(() => {
+        if (Date.now() - now < 1000) {
+          // Fallback to generic share if deep link fails
+          const shareData = {
+            title: 'RIVO Community',
+            text: 'Check out this amazing post from the RIVO Community!',
+            url: window.location.href
+          };
+          if (navigator.share) {
+            navigator.share(shareData).catch(err => console.log('Sharing canceled or failed:', err));
+          } else {
             window.open('https://instagram.com/', '_blank');
-          }, 500);
+          }
         }
-      } catch (err) {
-        console.log('Sharing canceled or failed:', err);
-      }
+      }, 500);
     });
   });
 
